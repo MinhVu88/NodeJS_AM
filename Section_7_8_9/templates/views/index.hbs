@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./img/weather.png">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Section 7 - web servers (weather app)</title>
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>Section 7 | web servers (weather app) | serving up dynamic pages with templating</p>
+            <form>
+                <input type="text" placeholder="Location....">
+                <button type="submit">Search</button>
+            </form>
+            <div id="weather-info" style="margin-top: 15px; color: green;"></div>
+        </div>
+        {{>footer}}
+        <script src="./js/script.js"></script>
+    </body>
+</html>
